@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js" defer ></script>
+    <title>rock-paper-scissors</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-bonus.svg"/>
+        <div class="scorediv"><p>score</p><p class="score">0</p></div>
+    </header>
+    <div class="windiv">
+        <div class="windiv2">
+            <div class="windiv3"></div>
+        </div>
+    </div>
+    <div class="windivright">
+        <div class="windiv2" id="right2">
+            <div class="windiv3" id="right3"></div>
+        </div>
+    </div>
+    <section class="mainsection">
+        <div class="pentagondiv">
+            <img class="pentagon" src="images/bg-pentagon.svg"/>
+            <div class="choose scissor"><div class="shadow"><img src="images/icon-scissors.svg"/></div></div>
+            <div class="choose paper"><div class="shadow"><img src="images/icon-paper.svg"/></div></div>
+            <div class="choose rock"><div class="shadow"><img src="images/icon-rock.svg"/></div></div>
+            <div class="choose lizzard"><div class="shadow"><img src="images/icon-lizard.svg"/></div></div>
+            <div class="choose spock"><div class="shadow"><img src="images/icon-spock.svg"/></div></div>
+            <div class="hoverscissor hover"></div>
+            <div class="hoverpaper hover"></div>
+            <div class="hoverrock hover"></div>
+            <div class="hoverlizzard hover"></div>
+            <div class="hoverspock hover"></div>
+        </div>
+    </section>
+    <footer>
+        <button onclick="rules()"><span>rules</span></button>
+    </footer>
+    <section class="rulessection"><div class="rules">
+        <h1>rules</h1>
+        <img class="explain" src="images/image-rules-bonus.svg">
+        <img  class="close" src="images/icon-close.svg">
+    </div>
+</section>
+    <section class="playsection">
+        <div class="leftside">
+        <div class="choosed first"><div class="choosedshadow"><img src="images/icon-scissors.svg"/></div></div>
+        <div class="choosed second"><div class="choosedshadow"><img src="images/icon-paper.svg"/></div></div>
+        <div class="choosed third"><div class="choosedshadow"><img src="images/icon-rock.svg"/></div></div>
+        <div class="choosed fourth"><div class="choosedshadow"><img src="images/icon-lizard.svg"/></div></div>
+        <div class="choosed fifth"><div class="choosedshadow"><img src="images/icon-spock.svg"/></div></div>
+        <h2>you picked</h2>
+    </div>
+    <section class="modal">
+        <h3 class="draw">Draw</h3>
+        <h3 class="win">win</h3>
+        <h3 class="loose">loose</h3>
+        <button class="playagain">play again</button>
+    </section>
+    <div class="rightside">
+        <div class="blackdiv"></div>
+        <h2 class="h2">THE HOUSE PICKED</h2>
+        <div class="computer choosed first"><div class="choosedshadow"><img src="images/icon-scissors.svg"/></div></div>
+        <div class="computer choosed second"><div class="choosedshadow"><img src="images/icon-paper.svg"/></div></div>
+        <div class="computer choosed third"><div class="choosedshadow"><img src="images/icon-rock.svg"/></div></div>
+        <div class="computer choosed fourth"><div class="choosedshadow"><img src="images/icon-lizard.svg"/></div></div>
+        <div class="computer choosed fifth"><div class="choosedshadow"><img src="images/icon-spock.svg"/></div></div>
+    </div>
+    </section>
+</body>
+</html>
